@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+
+    <property name="now" value="now()" dbms="mysql"/>
+    <property name="autoIncrement" value="true"/>
+
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle, mssql"/>
+
+    <!--
+        Added the entity SupplierGeneralInfo.
+    -->
+    <changeSet id="20180205121049-1" author="jhipster">
+        <createTable tableName="supplier_general_info">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="first_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="middle_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="last_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="supplier_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="primary_email" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="secondary_email" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="website" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="expiry_date" type="timestamp">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="application_ref_no" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="type_goods_yn" type="bit">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="type_services_yn" type="bit">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="type_works_yn" type="bit">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="user_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="renewed_date" type="timestamp">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="reg_validity" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="submission_date" type="timestamp">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="renewal_no" type="integer">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="approvaldate" type="timestamp">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="registration_billed_yn" type="bit">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="renewal_billed_yn" type="bit">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="comments" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="transaction_remarks" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="blacklisted_yn" type="bit">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="reg_mail_notification_yn" type="bit">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="application_ver_yn" type="bit">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="approver_decision" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="send_published_mail" type="bit">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="certificate_check_yn" type="bit">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="mobile_verified" type="bit">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="sms_enabled" type="bit">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="email_verified" type="bit">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="email_otp" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="email_otp_date" type="timestamp">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="email_otp_expired" type="bit">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="supplier_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="supplier_general_to_address_id" type="bigint">
+                <constraints unique="true" nullable="true" />
+            </column>
+            <column name="general_infos_to_supplier_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here, do not remove-->
+        </createTable>
+        <dropDefaultValue tableName="supplier_general_info" columnName="expiry_date" columnDataType="datetime"/>
+        <dropDefaultValue tableName="supplier_general_info" columnName="renewed_date" columnDataType="datetime"/>
+        <dropDefaultValue tableName="supplier_general_info" columnName="submission_date" columnDataType="datetime"/>
+        <dropDefaultValue tableName="supplier_general_info" columnName="approvaldate" columnDataType="datetime"/>
+        <dropDefaultValue tableName="supplier_general_info" columnName="email_otp_date" columnDataType="datetime"/>
+        
+    </changeSet>
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here, do not remove-->
+</databaseChangeLog>

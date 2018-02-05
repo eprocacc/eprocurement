@@ -1,0 +1,155 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="mySupplierLabel" data-translate="jhipstergatwayApp.supplier.home.createOrEditLabel">Create or edit a Supplier</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.supplier.id">
+            <label for="id" data-translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.supplier.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.supplier.applicantType" for="field_applicantType">Applicant Type</label>
+            <input type="text" class="form-control" name="applicantType" id="field_applicantType"
+                    ng-model="vm.supplier.applicantType"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.supplier.type" for="field_type">Type</label>
+            <input type="text" class="form-control" name="type" id="field_type"
+                    ng-model="vm.supplier.type"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.supplier.name" for="field_name">Name</label>
+            <input type="text" class="form-control" name="name" id="field_name"
+                    ng-model="vm.supplier.name"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.supplier.firstName" for="field_firstName">First Name</label>
+            <input type="text" class="form-control" name="firstName" id="field_firstName"
+                    ng-model="vm.supplier.firstName"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.supplier.middleName" for="field_middleName">Middle Name</label>
+            <input type="text" class="form-control" name="middleName" id="field_middleName"
+                    ng-model="vm.supplier.middleName"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.supplier.lastName" for="field_lastName">Last Name</label>
+            <input type="text" class="form-control" name="lastName" id="field_lastName"
+                    ng-model="vm.supplier.lastName"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.supplier.socialStatus" for="field_socialStatus">Social Status</label>
+            <select class="form-control" name="socialStatus" ng-model="vm.supplier.socialStatus" id="field_socialStatus">
+                <option value="HUF" data-translate="jhipstergatwayApp.SocialStatus.HUF">HUF</option>
+                <option value="SC" data-translate="jhipstergatwayApp.SocialStatus.SC">SC</option>
+                <option value="ST" data-translate="jhipstergatwayApp.SocialStatus.ST">ST</option>
+                <option value="OTHERS" data-translate="jhipstergatwayApp.SocialStatus.OTHERS">OTHERS</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.supplier.designation" for="field_designation">Designation</label>
+            <input type="text" class="form-control" name="designation" id="field_designation"
+                    ng-model="vm.supplier.designation"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.supplier.regnNumber" for="field_regnNumber">Regn Number</label>
+            <input type="text" class="form-control" name="regnNumber" id="field_regnNumber"
+                    ng-model="vm.supplier.regnNumber"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.supplier.pan" for="field_pan">Pan</label>
+            <input type="text" class="form-control" name="pan" id="field_pan"
+                    ng-model="vm.supplier.pan"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.supplier.panName" for="field_panName">Pan Name</label>
+            <input type="text" class="form-control" name="panName" id="field_panName"
+                    ng-model="vm.supplier.panName"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.supplier.grossTurnOver" for="field_grossTurnOver">Gross Turn Over</label>
+            <input type="number" class="form-control" name="grossTurnOver" id="field_grossTurnOver"
+                    ng-model="vm.supplier.grossTurnOver"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.supplier.supplierStatus" for="field_supplierStatus">Supplier Status</label>
+            <select class="form-control" name="supplierStatus" ng-model="vm.supplier.supplierStatus" id="field_supplierStatus">
+                <option value="DRAFT" data-translate="jhipstergatwayApp.SupplierStatus.DRAFT">DRAFT</option>
+                <option value="RECEIVED" data-translate="jhipstergatwayApp.SupplierStatus.RECEIVED">RECEIVED</option>
+                <option value="SENT_FOR_APPROVAL" data-translate="jhipstergatwayApp.SupplierStatus.SENT_FOR_APPROVAL">SENT_FOR_APPROVAL</option>
+                <option value="APPROVED" data-translate="jhipstergatwayApp.SupplierStatus.APPROVED">APPROVED</option>
+                <option value="REGISTERED" data-translate="jhipstergatwayApp.SupplierStatus.REGISTERED">REGISTERED</option>
+                <option value="BLACKLISTED" data-translate="jhipstergatwayApp.SupplierStatus.BLACKLISTED">BLACKLISTED</option>
+                <option value="REJECTED" data-translate="jhipstergatwayApp.SupplierStatus.REJECTED">REJECTED</option>
+                <option value="TO_BE_RENEWED" data-translate="jhipstergatwayApp.SupplierStatus.TO_BE_RENEWED">TO_BE_RENEWED</option>
+                <option value="REG_EXPIRED" data-translate="jhipstergatwayApp.SupplierStatus.REG_EXPIRED">REG_EXPIRED</option>
+                <option value="RENEWED" data-translate="jhipstergatwayApp.SupplierStatus.RENEWED">RENEWED</option>
+                <option value="CANCELED" data-translate="jhipstergatwayApp.SupplierStatus.CANCELED">CANCELED</option>
+                <option value="ACCEPTED" data-translate="jhipstergatwayApp.SupplierStatus.ACCEPTED">ACCEPTED</option>
+                <option value="ACTIVATED" data-translate="jhipstergatwayApp.SupplierStatus.ACTIVATED">ACTIVATED</option>
+                <option value="DEACTIVATED" data-translate="jhipstergatwayApp.SupplierStatus.DEACTIVATED">DEACTIVATED</option>
+                <option value="VERIFIED" data-translate="jhipstergatwayApp.SupplierStatus.VERIFIED">VERIFIED</option>
+                <option value="SEEK_CLARIFICATIONS" data-translate="jhipstergatwayApp.SupplierStatus.SEEK_CLARIFICATIONS">SEEK_CLARIFICATIONS</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.supplier.ssiYn" for="field_ssiYn">Ssi Yn</label>
+                <input type="checkbox" name="ssiYn" id="field_ssiYn"
+                          ng-model="vm.supplier.ssiYn"/>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.supplier.ssiRegnNumber" for="field_ssiRegnNumber">Ssi Regn Number</label>
+            <input type="text" class="form-control" name="ssiRegnNumber" id="field_ssiRegnNumber"
+                    ng-model="vm.supplier.ssiRegnNumber"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.supplier.panStatus" for="field_panStatus">Pan Status</label>
+                <input type="checkbox" name="panStatus" id="field_panStatus"
+                          ng-model="vm.supplier.panStatus"/>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.supplier.msmeYn" for="field_msmeYn">Msme Yn</label>
+                <input type="checkbox" name="msmeYn" id="field_msmeYn"
+                          ng-model="vm.supplier.msmeYn"/>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.supplier.msmeRegnNumber" for="field_msmeRegnNumber">Msme Regn Number</label>
+            <input type="text" class="form-control" name="msmeRegnNumber" id="field_msmeRegnNumber"
+                    ng-model="vm.supplier.msmeRegnNumber"
+                    />
+        </div>
+
+        <div class="form-group">
+            <label data-translate="jhipstergatwayApp.supplier.supplierAddress" for="field_supplierAddress">Supplier Address</label>
+            <select class="form-control" id="field_supplierAddress" name="supplierAddress" ng-model="vm.supplier.supplierAddress" ng-options="address as address.id for address in vm.supplieraddresses | orderBy:'id' track by address.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

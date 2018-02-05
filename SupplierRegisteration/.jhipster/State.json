@@ -1,0 +1,36 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "stateDistricts",
+            "otherEntityName": "district",
+            "otherEntityRelationshipName": "state"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "statesCountry",
+            "otherEntityName": "country",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "country",
+            "otherEntityName": "country",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180205121044",
+    "entityTableName": "state",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "SupplierRegisteration"
+}

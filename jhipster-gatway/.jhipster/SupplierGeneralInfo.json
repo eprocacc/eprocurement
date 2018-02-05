@@ -1,0 +1,184 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "supplier",
+            "otherEntityName": "supplier",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "supplierGeneralToAddress",
+            "otherEntityName": "address",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "supplierGeneralInfo"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "suppGeneralInfoTelephones",
+            "otherEntityName": "telephone",
+            "otherEntityRelationshipName": "supplierGeneralInfo"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "generalInfosToSupplier",
+            "otherEntityName": "supplier",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "firstName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "middleName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lastName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "supplierStatus",
+            "fieldType": "SupplierStatus",
+            "fieldValues": "DRAFT,RECEIVED,SENT_FOR_APPROVAL,APPROVED,REGISTERED,BLACKLISTED,REJECTED,TO_BE_RENEWED,REG_EXPIRED,RENEWED,CANCELED,ACCEPTED,ACTIVATED,DEACTIVATED,VERIFIED,SEEK_CLARIFICATIONS"
+        },
+        {
+            "fieldName": "primaryEmail",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "secondaryEmail",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "website",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "expiryDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "applicationRefNo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "typeGoodsYn",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "typeServicesYn",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "typeWorksYn",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "userType",
+            "fieldType": "SupplierUserType",
+            "fieldValues": "AUTHORIZED_SIGNATORY,NOMINATED_USER"
+        },
+        {
+            "fieldName": "renewedDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "regValidity",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "submissionDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "renewalNo",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "approvaldate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "registrationBilledYn",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "renewalBilledYn",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "comments",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "transactionRemarks",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "blacklistedYn",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "regMailNotificationYn",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "applicationVerYn",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "approverDecision",
+            "fieldType": "SupplierStatus",
+            "fieldValues": "DRAFT,RECEIVED,SENT_FOR_APPROVAL,APPROVED,REGISTERED,BLACKLISTED,REJECTED,TO_BE_RENEWED,REG_EXPIRED,RENEWED,CANCELED,ACCEPTED,ACTIVATED,DEACTIVATED,VERIFIED,SEEK_CLARIFICATIONS"
+        },
+        {
+            "fieldName": "sendPublishedMail",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "certificateCheckYn",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "mobileVerified",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "smsEnabled",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "emailVerified",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "emailOTP",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "emailOTPDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "emailOTPExpired",
+            "fieldType": "Boolean"
+        }
+    ],
+    "changelogDate": "20180205123531",
+    "entityTableName": "supplier_general_info",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "skipServer": true,
+    "microserviceName": "SupplierRegisteration"
+}

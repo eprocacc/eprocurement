@@ -7,6 +7,16 @@
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "பொருள்கள்",
+                "taluq": "Taluq",
+                "district": "District",
+                "state": "State",
+                "country": "Country",
+                "address": "Address",
+                "supplier": "Supplier",
+                "supplierNominee": "Supplier Nominee",
+                "supplierGeneralInfo": "Supplier General Info",
+                "digitalCertificate": "Digital Certificate",
+                "telephone": "Telephone",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

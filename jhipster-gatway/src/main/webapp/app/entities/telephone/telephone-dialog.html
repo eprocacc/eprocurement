@@ -1,0 +1,80 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myTelephoneLabel" data-translate="jhipstergatwayApp.telephone.home.createOrEditLabel">Create or edit a Telephone</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.telephone.id">
+            <label for="id" data-translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.telephone.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.telephone.countryCode" for="field_countryCode">Country Code</label>
+            <input type="number" class="form-control" name="countryCode" id="field_countryCode"
+                    ng-model="vm.telephone.countryCode"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.telephone.areaCode" for="field_areaCode">Area Code</label>
+            <input type="number" class="form-control" name="areaCode" id="field_areaCode"
+                    ng-model="vm.telephone.areaCode"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.telephone.number" for="field_number">Number</label>
+            <input type="text" class="form-control" name="number" id="field_number"
+                    ng-model="vm.telephone.number"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.telephone.type" for="field_type">Type</label>
+            <select class="form-control" name="type" ng-model="vm.telephone.type" id="field_type">
+                <option value="HOME" data-translate="jhipstergatwayApp.PhoneType.HOME">HOME</option>
+                <option value="OFFICE" data-translate="jhipstergatwayApp.PhoneType.OFFICE">OFFICE</option>
+                <option value="MOBILE" data-translate="jhipstergatwayApp.PhoneType.MOBILE">MOBILE</option>
+                <option value="FAX" data-translate="jhipstergatwayApp.PhoneType.FAX">FAX</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.telephone.mobileOTP" for="field_mobileOTP">Mobile OTP</label>
+            <input type="text" class="form-control" name="mobileOTP" id="field_mobileOTP"
+                    ng-model="vm.telephone.mobileOTP"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.telephone.mobileOTPDate" for="field_mobileOTPDate">Mobile OTP Date</label>
+                <div class="input-group">
+                    <input id="field_mobileOTPDate" type="text" class="form-control" name="mobileOTPDate" datetime-picker="{{dateformat}}" ng-model="vm.telephone.mobileOTPDate" is-open="vm.datePickerOpenStatus.mobileOTPDate"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('mobileOTPDate')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.telephone.mobileOTPExpired" for="field_mobileOTPExpired">Mobile OTP Expired</label>
+                <input type="checkbox" name="mobileOTPExpired" id="field_mobileOTPExpired"
+                          ng-model="vm.telephone.mobileOTPExpired"/>
+        </div>
+
+        <div class="form-group">
+            <label data-translate="jhipstergatwayApp.telephone.supplierGeneralInfo" for="field_supplierGeneralInfo">Supplier General Info</label>
+            <select class="form-control" id="field_supplierGeneralInfo" name="supplierGeneralInfo" ng-model="vm.telephone.supplierGeneralInfo" ng-options="supplierGeneralInfo as supplierGeneralInfo.id for supplierGeneralInfo in vm.suppliergeneralinfos track by supplierGeneralInfo.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

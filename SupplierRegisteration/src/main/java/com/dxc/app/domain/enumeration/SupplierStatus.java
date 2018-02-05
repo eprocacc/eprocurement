@@ -1,0 +1,8 @@
+package com.dxc.app.domain.enumeration;
+
+/**
+ * The SupplierStatus enumeration.
+ */
+public enum SupplierStatus {
+    DRAFT, RECEIVED, SENT_FOR_APPROVAL, APPROVED, REGISTERED, BLACKLISTED, REJECTED, TO_BE_RENEWED, REG_EXPIRED, RENEWED, CANCELED, ACCEPTED, ACTIVATED, DEACTIVATED, VERIFIED, SEEK_CLARIFICATIONS
+}

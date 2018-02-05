@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+
+    <property name="now" value="now()" dbms="mysql"/>
+    <property name="autoIncrement" value="true"/>
+
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle, mssql"/>
+
+    <!--
+        Added the entity DigitalCertificate.
+    -->
+    <changeSet id="20180205121050-1" author="jhipster">
+        <createTable tableName="digital_certificate">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="cert_chain" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="certificate_serial" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="term_start_date" type="timestamp">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="term_end_date" type="timestamp">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="signature" type="bit">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="encryption" type="bit">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="active_yn" type="bit">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="digital_certificate_user_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here, do not remove-->
+        </createTable>
+        <dropDefaultValue tableName="digital_certificate" columnName="term_start_date" columnDataType="datetime"/>
+        <dropDefaultValue tableName="digital_certificate" columnName="term_end_date" columnDataType="datetime"/>
+        
+    </changeSet>
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here, do not remove-->
+</databaseChangeLog>

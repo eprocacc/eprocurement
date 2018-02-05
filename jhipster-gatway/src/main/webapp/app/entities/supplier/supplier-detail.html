@@ -1,0 +1,95 @@
+
+<div>
+    <h2><span data-translate="jhipstergatwayApp.supplier.detail.title">Supplier</span> {{vm.supplier.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="jhipstergatwayApp.supplier.applicantType">Applicant Type</span></dt>
+        <dd>
+            <span>{{vm.supplier.applicantType}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplier.type">Type</span></dt>
+        <dd>
+            <span>{{vm.supplier.type}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplier.name">Name</span></dt>
+        <dd>
+            <span>{{vm.supplier.name}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplier.firstName">First Name</span></dt>
+        <dd>
+            <span>{{vm.supplier.firstName}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplier.middleName">Middle Name</span></dt>
+        <dd>
+            <span>{{vm.supplier.middleName}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplier.lastName">Last Name</span></dt>
+        <dd>
+            <span>{{vm.supplier.lastName}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplier.socialStatus">Social Status</span></dt>
+        <dd>
+            <span data-translate="{{'jhipstergatwayApp.SocialStatus.' + vm.supplier.socialStatus}}">{{vm.supplier.socialStatus}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplier.designation">Designation</span></dt>
+        <dd>
+            <span>{{vm.supplier.designation}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplier.regnNumber">Regn Number</span></dt>
+        <dd>
+            <span>{{vm.supplier.regnNumber}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplier.pan">Pan</span></dt>
+        <dd>
+            <span>{{vm.supplier.pan}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplier.panName">Pan Name</span></dt>
+        <dd>
+            <span>{{vm.supplier.panName}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplier.grossTurnOver">Gross Turn Over</span></dt>
+        <dd>
+            <span>{{vm.supplier.grossTurnOver}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplier.supplierStatus">Supplier Status</span></dt>
+        <dd>
+            <span data-translate="{{'jhipstergatwayApp.SupplierStatus.' + vm.supplier.supplierStatus}}">{{vm.supplier.supplierStatus}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplier.ssiYn">Ssi Yn</span></dt>
+        <dd>
+            <span>{{vm.supplier.ssiYn}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplier.ssiRegnNumber">Ssi Regn Number</span></dt>
+        <dd>
+            <span>{{vm.supplier.ssiRegnNumber}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplier.panStatus">Pan Status</span></dt>
+        <dd>
+            <span>{{vm.supplier.panStatus}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplier.msmeYn">Msme Yn</span></dt>
+        <dd>
+            <span>{{vm.supplier.msmeYn}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplier.msmeRegnNumber">Msme Regn Number</span></dt>
+        <dd>
+            <span>{{vm.supplier.msmeRegnNumber}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplier.supplierAddress">Supplier Address</span></dt>
+        <dd>
+            <a ui-sref="address-detail({id:vm.supplier.supplierAddress.id})">{{vm.supplier.supplierAddress.id}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="supplier-detail.edit({id:vm.supplier.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

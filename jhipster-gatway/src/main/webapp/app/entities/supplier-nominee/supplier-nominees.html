@@ -1,0 +1,85 @@
+<div>
+    <h2 data-translate="jhipstergatwayApp.supplierNominee.home.title">Supplier Nominees</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="supplier-nominee.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span class="hidden-xs-down"  data-translate="jhipstergatwayApp.supplierNominee.home.createLabel">
+                        Create new Supplier Nominee
+                    </span>
+                </button>
+            </div>
+            <div class="col-xs-8 no-padding-right">
+                <form name="searchForm" class="form-inline">
+                    <div class="input-group pull-right" >
+                        <input type="text" class="form-control" ng-model="vm.searchQuery" id="searchQuery" placeholder="{{ 'jhipstergatwayApp.supplierNominee.home.search' | translate }}">
+                        <span  class="input-group-btn width-min" >
+                            <button class="btn btn-info" ng-click="vm.search(vm.searchQuery)">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                        <span class="input-group-btn width-min" ng-if="vm.currentSearch">
+                            <button class="btn btn-info" ng-click="vm.clear()">
+                                <span class="glyphicon glyphicon-trash"></span>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span data-translate="global.field.id">ID</span></th>
+                    <th><span data-translate="jhipstergatwayApp.supplierNominee.name">Name</span></th>
+                    <th><span data-translate="jhipstergatwayApp.supplierNominee.registered">Registered</span></th>
+                    <th><span data-translate="jhipstergatwayApp.supplierNominee.certChain">Cert Chain</span></th>
+                    <th><span data-translate="jhipstergatwayApp.supplierNominee.supplier">Supplier</span></th>
+                    <th><span data-translate="jhipstergatwayApp.supplierNominee.nomineesToSupplier">Nominees To Supplier</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="supplierNominee in vm.supplierNominees track by supplierNominee.id">
+                    <td><a ui-sref="supplier-nominee-detail({id:supplierNominee.id})">{{supplierNominee.id}}</a></td>
+                    <td>{{supplierNominee.name}}</td>
+                    <td>{{supplierNominee.registered}}</td>
+                    <td>{{supplierNominee.certChain}}</td>
+                    <td>
+                        <a ui-sref="supplier-detail({id:supplierNominee.supplier.id})">{{supplierNominee.supplier.id}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="supplier-detail({id:supplierNominee.nomineesToSupplier.id})">{{supplierNominee.nomineesToSupplier.id}}</a>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="supplier-nominee-detail({id:supplierNominee.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="supplier-nominee.edit({id:supplierNominee.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="supplier-nominee.delete({id:supplierNominee.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

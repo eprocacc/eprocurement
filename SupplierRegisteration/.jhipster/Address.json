@@ -1,0 +1,54 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "addressState",
+            "otherEntityName": "state",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "addressCountry",
+            "otherEntityName": "country",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "blockNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "street",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "city",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "otherState",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pin",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "countryId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "stateId",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20180205121046",
+    "entityTableName": "address",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "SupplierRegisteration"
+}

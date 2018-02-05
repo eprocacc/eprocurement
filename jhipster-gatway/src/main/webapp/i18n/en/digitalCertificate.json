@@ -1,0 +1,33 @@
+{
+    "jhipstergatwayApp": {
+        "digitalCertificate" : {
+            "home": {
+                "title": "Digital Certificates",
+                "createLabel": "Create a new Digital Certificate",
+                "createOrEditLabel": "Create or edit a Digital Certificate",
+                "search": "Search for Digital Certificate"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Digital Certificate {{ id }}?"
+            },
+            "detail": {
+                "title": "Digital Certificate"
+            },
+            "certChain": "Cert Chain",
+            "certificateSerial": "Certificate Serial",
+            "termStartDate": "Term Start Date",
+            "termEndDate": "Term End Date",
+            "signature": "Signature",
+            "encryption": "Encryption",
+            "activeYn": "Active Yn",
+            "digitalCertificateUser": "Digital Certificate User"
+        }
+    },
+    "supplierRegisterationApp": {
+        "digitalCertificate" : {
+            "created": "A new Digital Certificate is created with identifier {{ param }}",
+            "updated": "A Digital Certificate is updated with identifier {{ param }}",
+            "deleted": "A Digital Certificate is deleted with identifier {{ param }}"
+        }
+    }
+}

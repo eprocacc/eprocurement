@@ -1,0 +1,55 @@
+
+<div>
+    <h2><span data-translate="jhipstergatwayApp.address.detail.title">Address</span> {{vm.address.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="jhipstergatwayApp.address.blockNumber">Block Number</span></dt>
+        <dd>
+            <span>{{vm.address.blockNumber}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.address.street">Street</span></dt>
+        <dd>
+            <span>{{vm.address.street}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.address.city">City</span></dt>
+        <dd>
+            <span>{{vm.address.city}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.address.otherState">Other State</span></dt>
+        <dd>
+            <span>{{vm.address.otherState}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.address.pin">Pin</span></dt>
+        <dd>
+            <span>{{vm.address.pin}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.address.countryId">Country Id</span></dt>
+        <dd>
+            <span>{{vm.address.countryId}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.address.stateId">State Id</span></dt>
+        <dd>
+            <span>{{vm.address.stateId}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.address.addressState">Address State</span></dt>
+        <dd>
+            <a ui-sref="state-detail({id:vm.address.addressState.id})">{{vm.address.addressState.id}}</a>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.address.addressCountry">Address Country</span></dt>
+        <dd>
+            <a ui-sref="country-detail({id:vm.address.addressCountry.id})">{{vm.address.addressCountry.id}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="address-detail.edit({id:vm.address.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

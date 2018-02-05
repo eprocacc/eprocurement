@@ -1,0 +1,171 @@
+
+<div>
+    <h2><span data-translate="jhipstergatwayApp.supplierGeneralInfo.detail.title">Supplier General Info</span> {{vm.supplierGeneralInfo.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.name">Name</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.name}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.firstName">First Name</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.firstName}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.middleName">Middle Name</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.middleName}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.lastName">Last Name</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.lastName}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.supplierStatus">Supplier Status</span></dt>
+        <dd>
+            <span data-translate="{{'jhipstergatwayApp.SupplierStatus.' + vm.supplierGeneralInfo.supplierStatus}}">{{vm.supplierGeneralInfo.supplierStatus}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.primaryEmail">Primary Email</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.primaryEmail}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.secondaryEmail">Secondary Email</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.secondaryEmail}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.website">Website</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.website}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.expiryDate">Expiry Date</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.expiryDate | date:'medium'}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.applicationRefNo">Application Ref No</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.applicationRefNo}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.typeGoodsYn">Type Goods Yn</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.typeGoodsYn}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.typeServicesYn">Type Services Yn</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.typeServicesYn}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.typeWorksYn">Type Works Yn</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.typeWorksYn}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.userType">User Type</span></dt>
+        <dd>
+            <span data-translate="{{'jhipstergatwayApp.SupplierUserType.' + vm.supplierGeneralInfo.userType}}">{{vm.supplierGeneralInfo.userType}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.renewedDate">Renewed Date</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.renewedDate | date:'medium'}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.regValidity">Reg Validity</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.regValidity}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.submissionDate">Submission Date</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.submissionDate | date:'medium'}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.renewalNo">Renewal No</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.renewalNo}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.approvaldate">Approvaldate</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.approvaldate | date:'medium'}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.registrationBilledYn">Registration Billed Yn</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.registrationBilledYn}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.renewalBilledYn">Renewal Billed Yn</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.renewalBilledYn}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.comments">Comments</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.comments}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.transactionRemarks">Transaction Remarks</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.transactionRemarks}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.blacklistedYn">Blacklisted Yn</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.blacklistedYn}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.regMailNotificationYn">Reg Mail Notification Yn</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.regMailNotificationYn}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.applicationVerYn">Application Ver Yn</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.applicationVerYn}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.approverDecision">Approver Decision</span></dt>
+        <dd>
+            <span data-translate="{{'jhipstergatwayApp.SupplierStatus.' + vm.supplierGeneralInfo.approverDecision}}">{{vm.supplierGeneralInfo.approverDecision}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.sendPublishedMail">Send Published Mail</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.sendPublishedMail}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.certificateCheckYn">Certificate Check Yn</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.certificateCheckYn}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.mobileVerified">Mobile Verified</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.mobileVerified}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.smsEnabled">Sms Enabled</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.smsEnabled}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.emailVerified">Email Verified</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.emailVerified}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.emailOTP">Email OTP</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.emailOTP}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.emailOTPDate">Email OTP Date</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.emailOTPDate | date:'medium'}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.emailOTPExpired">Email OTP Expired</span></dt>
+        <dd>
+            <span>{{vm.supplierGeneralInfo.emailOTPExpired}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.supplier">Supplier</span></dt>
+        <dd>
+            <a ui-sref="supplier-detail({id:vm.supplierGeneralInfo.supplier.id})">{{vm.supplierGeneralInfo.supplier.id}}</a>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.supplierGeneralToAddress">Supplier General To Address</span></dt>
+        <dd>
+            <a ui-sref="address-detail({id:vm.supplierGeneralInfo.supplierGeneralToAddress.id})">{{vm.supplierGeneralInfo.supplierGeneralToAddress.id}}</a>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierGeneralInfo.generalInfosToSupplier">General Infos To Supplier</span></dt>
+        <dd>
+            <a ui-sref="supplier-detail({id:vm.supplierGeneralInfo.generalInfosToSupplier.id})">{{vm.supplierGeneralInfo.generalInfosToSupplier.id}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="supplier-general-info-detail.edit({id:vm.supplierGeneralInfo.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

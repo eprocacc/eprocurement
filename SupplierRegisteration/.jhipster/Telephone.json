@@ -1,0 +1,49 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "supplierGeneralInfo",
+            "otherEntityName": "supplierGeneralInfo",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "countryCode",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "areaCode",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "number",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "PhoneType",
+            "fieldValues": "HOME,OFFICE,MOBILE,FAX"
+        },
+        {
+            "fieldName": "mobileOTP",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "mobileOTPDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "mobileOTPExpired",
+            "fieldType": "Boolean"
+        }
+    ],
+    "changelogDate": "20180205121051",
+    "entityTableName": "telephone",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "SupplierRegisteration"
+}

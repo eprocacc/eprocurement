@@ -1,0 +1,64 @@
+{
+    "jhipstergatwayApp": {
+        "supplierGeneralInfo" : {
+            "home": {
+                "title": "Supplier General Infos",
+                "createLabel": "Create a new Supplier General Info",
+                "createOrEditLabel": "Create or edit a Supplier General Info",
+                "search": "Search for Supplier General Info"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Supplier General Info {{ id }}?"
+            },
+            "detail": {
+                "title": "Supplier General Info"
+            },
+            "name": "Name",
+            "firstName": "First Name",
+            "middleName": "Middle Name",
+            "lastName": "Last Name",
+            "supplierStatus": "Supplier Status",
+            "primaryEmail": "Primary Email",
+            "secondaryEmail": "Secondary Email",
+            "website": "Website",
+            "expiryDate": "Expiry Date",
+            "applicationRefNo": "Application Ref No",
+            "typeGoodsYn": "Type Goods Yn",
+            "typeServicesYn": "Type Services Yn",
+            "typeWorksYn": "Type Works Yn",
+            "userType": "User Type",
+            "renewedDate": "Renewed Date",
+            "regValidity": "Reg Validity",
+            "submissionDate": "Submission Date",
+            "renewalNo": "Renewal No",
+            "approvaldate": "Approvaldate",
+            "registrationBilledYn": "Registration Billed Yn",
+            "renewalBilledYn": "Renewal Billed Yn",
+            "comments": "Comments",
+            "transactionRemarks": "Transaction Remarks",
+            "blacklistedYn": "Blacklisted Yn",
+            "regMailNotificationYn": "Reg Mail Notification Yn",
+            "applicationVerYn": "Application Ver Yn",
+            "approverDecision": "Approver Decision",
+            "sendPublishedMail": "Send Published Mail",
+            "certificateCheckYn": "Certificate Check Yn",
+            "mobileVerified": "Mobile Verified",
+            "smsEnabled": "Sms Enabled",
+            "emailVerified": "Email Verified",
+            "emailOTP": "Email OTP",
+            "emailOTPDate": "Email OTP Date",
+            "emailOTPExpired": "Email OTP Expired",
+            "supplier": "Supplier",
+            "supplierGeneralToAddress": "Supplier General To Address",
+            "suppGeneralInfoTelephones": "Supp General Info Telephones",
+            "generalInfosToSupplier": "General Infos To Supplier"
+        }
+    },
+    "supplierRegisterationApp": {
+        "supplierGeneralInfo" : {
+            "created": "A new Supplier General Info is created with identifier {{ param }}",
+            "updated": "A Supplier General Info is updated with identifier {{ param }}",
+            "deleted": "A Supplier General Info is deleted with identifier {{ param }}"
+        }
+    }
+}

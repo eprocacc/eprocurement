@@ -1,0 +1,9 @@
+{
+    "jhipstergatwayApp": {
+        "SupplierUserType" : {
+            "null": "",
+            "AUTHORIZED_SIGNATORY": "AUTHORIZED_SIGNATORY",
+            "NOMINATED_USER": "NOMINATED_USER"
+        }
+    }
+}

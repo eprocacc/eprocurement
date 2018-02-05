@@ -1,0 +1,38 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "supplier",
+            "otherEntityName": "supplier",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "nomineesToSupplier",
+            "otherEntityName": "supplier",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "registered",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "certChain",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180205121048",
+    "entityTableName": "supplier_nominee",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "SupplierRegisteration"
+}

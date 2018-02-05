@@ -1,0 +1,33 @@
+{
+    "jhipstergatwayApp": {
+        "telephone" : {
+            "home": {
+                "title": "Telephones",
+                "createLabel": "Telephone-ஐ உருவாக்கு",
+                "createOrEditLabel": "Telephone -ஐ மாற்று (அ) உருவாக்கு",
+                "search": "Search for Telephone"
+            },
+            "delete": {
+                "question": "நீக்குவதற்கு உறுதி செய் Telephone {{ id }}?"
+            },
+            "detail": {
+                "title": "Telephone"
+            },
+            "countryCode": "Country Code",
+            "areaCode": "Area Code",
+            "number": "Number",
+            "type": "Type",
+            "mobileOTP": "Mobile OTP",
+            "mobileOTPDate": "Mobile OTP Date",
+            "mobileOTPExpired": "Mobile OTP Expired",
+            "supplierGeneralInfo": "Supplier General Info"
+        }
+    },
+    "supplierRegisterationApp": {
+        "telephone" : {
+            "created": "Telephone புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+            "updated": "Telephone மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+            "deleted": "A Telephone நீக்கப்பட்டது, அடையாளம {{ param }}"
+        }
+    }
+}

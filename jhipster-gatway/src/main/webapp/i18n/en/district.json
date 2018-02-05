@@ -1,0 +1,29 @@
+{
+    "jhipstergatwayApp": {
+        "district" : {
+            "home": {
+                "title": "Districts",
+                "createLabel": "Create a new District",
+                "createOrEditLabel": "Create or edit a District",
+                "search": "Search for District"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete District {{ id }}?"
+            },
+            "detail": {
+                "title": "District"
+            },
+            "name": "Name",
+            "districtTaluqs": "District Taluqs",
+            "districtsState": "Districts State",
+            "state": "State"
+        }
+    },
+    "supplierRegisterationApp": {
+        "district" : {
+            "created": "A new District is created with identifier {{ param }}",
+            "updated": "A District is updated with identifier {{ param }}",
+            "deleted": "A District is deleted with identifier {{ param }}"
+        }
+    }
+}

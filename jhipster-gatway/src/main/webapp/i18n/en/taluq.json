@@ -1,0 +1,28 @@
+{
+    "jhipstergatwayApp": {
+        "taluq" : {
+            "home": {
+                "title": "Taluqs",
+                "createLabel": "Create a new Taluq",
+                "createOrEditLabel": "Create or edit a Taluq",
+                "search": "Search for Taluq"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Taluq {{ id }}?"
+            },
+            "detail": {
+                "title": "Taluq"
+            },
+            "name": "Name",
+            "taluqsDistrict": "Taluqs District",
+            "district": "District"
+        }
+    },
+    "supplierRegisterationApp": {
+        "taluq" : {
+            "created": "A new Taluq is created with identifier {{ param }}",
+            "updated": "A Taluq is updated with identifier {{ param }}",
+            "deleted": "A Taluq is deleted with identifier {{ param }}"
+        }
+    }
+}

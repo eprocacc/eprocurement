@@ -1,0 +1,49 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "digitalCertificateUser",
+            "otherEntityName": "supplier",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "certChain",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "certificateSerial",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "termStartDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "termEndDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "signature",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "encryption",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "activeYn",
+            "fieldType": "Boolean"
+        }
+    ],
+    "changelogDate": "20180205123532",
+    "entityTableName": "digital_certificate",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "skipServer": true,
+    "microserviceName": "SupplierRegisteration"
+}

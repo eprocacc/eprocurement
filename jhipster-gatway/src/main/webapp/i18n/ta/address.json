@@ -1,0 +1,34 @@
+{
+    "jhipstergatwayApp": {
+        "address" : {
+            "home": {
+                "title": "Addresses",
+                "createLabel": "Address-ஐ உருவாக்கு",
+                "createOrEditLabel": "Address -ஐ மாற்று (அ) உருவாக்கு",
+                "search": "Search for Address"
+            },
+            "delete": {
+                "question": "நீக்குவதற்கு உறுதி செய் Address {{ id }}?"
+            },
+            "detail": {
+                "title": "Address"
+            },
+            "blockNumber": "Block Number",
+            "street": "Street",
+            "city": "City",
+            "otherState": "Other State",
+            "pin": "Pin",
+            "countryId": "Country Id",
+            "stateId": "State Id",
+            "addressState": "Address State",
+            "addressCountry": "Address Country"
+        }
+    },
+    "supplierRegisterationApp": {
+        "address" : {
+            "created": "Address புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+            "updated": "Address மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+            "deleted": "A Address நீக்கப்பட்டது, அடையாளம {{ param }}"
+        }
+    }
+}

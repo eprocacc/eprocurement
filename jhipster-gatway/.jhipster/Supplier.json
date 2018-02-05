@@ -1,0 +1,109 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "supplierAddress",
+            "otherEntityName": "address",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "supplier"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "supplierToNominees",
+            "otherEntityName": "supplierNominee",
+            "otherEntityRelationshipName": "supplier"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "supplierToGeneralInfos",
+            "otherEntityName": "supplierGeneralInfo",
+            "otherEntityRelationshipName": "supplier"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "applicantType",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "firstName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "middleName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lastName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "socialStatus",
+            "fieldType": "SocialStatus",
+            "fieldValues": "HUF,SC,ST,OTHERS"
+        },
+        {
+            "fieldName": "designation",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "regnNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pan",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "panName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "grossTurnOver",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "supplierStatus",
+            "fieldType": "SupplierStatus",
+            "fieldValues": "DRAFT,RECEIVED,SENT_FOR_APPROVAL,APPROVED,REGISTERED,BLACKLISTED,REJECTED,TO_BE_RENEWED,REG_EXPIRED,RENEWED,CANCELED,ACCEPTED,ACTIVATED,DEACTIVATED,VERIFIED,SEEK_CLARIFICATIONS"
+        },
+        {
+            "fieldName": "ssiYn",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "ssiRegnNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "panStatus",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "msmeYn",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "msmeRegnNumber",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180205123529",
+    "entityTableName": "supplier",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "skipServer": true,
+    "microserviceName": "SupplierRegisteration"
+}

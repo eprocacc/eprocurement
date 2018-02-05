@@ -1,0 +1,30 @@
+{
+    "jhipstergatwayApp": {
+        "supplierNominee" : {
+            "home": {
+                "title": "Supplier Nominees",
+                "createLabel": "Supplier Nominee-ஐ உருவாக்கு",
+                "createOrEditLabel": "Supplier Nominee -ஐ மாற்று (அ) உருவாக்கு",
+                "search": "Search for Supplier Nominee"
+            },
+            "delete": {
+                "question": "நீக்குவதற்கு உறுதி செய் Supplier Nominee {{ id }}?"
+            },
+            "detail": {
+                "title": "Supplier Nominee"
+            },
+            "name": "Name",
+            "registered": "Registered",
+            "certChain": "Cert Chain",
+            "supplier": "Supplier",
+            "nomineesToSupplier": "Nominees To Supplier"
+        }
+    },
+    "supplierRegisterationApp": {
+        "supplierNominee" : {
+            "created": "Supplier Nominee புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+            "updated": "Supplier Nominee மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+            "deleted": "A Supplier Nominee நீக்கப்பட்டது, அடையாளம {{ param }}"
+        }
+    }
+}

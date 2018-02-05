@@ -1,0 +1,46 @@
+{
+    "jhipstergatwayApp": {
+        "supplier" : {
+            "home": {
+                "title": "Suppliers",
+                "createLabel": "Create a new Supplier",
+                "createOrEditLabel": "Create or edit a Supplier",
+                "search": "Search for Supplier"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Supplier {{ id }}?"
+            },
+            "detail": {
+                "title": "Supplier"
+            },
+            "applicantType": "Applicant Type",
+            "type": "Type",
+            "name": "Name",
+            "firstName": "First Name",
+            "middleName": "Middle Name",
+            "lastName": "Last Name",
+            "socialStatus": "Social Status",
+            "designation": "Designation",
+            "regnNumber": "Regn Number",
+            "pan": "Pan",
+            "panName": "Pan Name",
+            "grossTurnOver": "Gross Turn Over",
+            "supplierStatus": "Supplier Status",
+            "ssiYn": "Ssi Yn",
+            "ssiRegnNumber": "Ssi Regn Number",
+            "panStatus": "Pan Status",
+            "msmeYn": "Msme Yn",
+            "msmeRegnNumber": "Msme Regn Number",
+            "supplierAddress": "Supplier Address",
+            "supplierToNominees": "Supplier To Nominees",
+            "supplierToGeneralInfos": "Supplier To General Infos"
+        }
+    },
+    "supplierRegisterationApp": {
+        "supplier" : {
+            "created": "A new Supplier is created with identifier {{ param }}",
+            "updated": "A Supplier is updated with identifier {{ param }}",
+            "deleted": "A Supplier is deleted with identifier {{ param }}"
+        }
+    }
+}

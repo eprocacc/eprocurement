@@ -1,0 +1,33 @@
+{
+    "jhipstergatwayApp": {
+        "telephone" : {
+            "home": {
+                "title": "Telephones",
+                "createLabel": "Create a new Telephone",
+                "createOrEditLabel": "Create or edit a Telephone",
+                "search": "Search for Telephone"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Telephone {{ id }}?"
+            },
+            "detail": {
+                "title": "Telephone"
+            },
+            "countryCode": "Country Code",
+            "areaCode": "Area Code",
+            "number": "Number",
+            "type": "Type",
+            "mobileOTP": "Mobile OTP",
+            "mobileOTPDate": "Mobile OTP Date",
+            "mobileOTPExpired": "Mobile OTP Expired",
+            "supplierGeneralInfo": "Supplier General Info"
+        }
+    },
+    "supplierRegisterationApp": {
+        "telephone" : {
+            "created": "A new Telephone is created with identifier {{ param }}",
+            "updated": "A Telephone is updated with identifier {{ param }}",
+            "deleted": "A Telephone is deleted with identifier {{ param }}"
+        }
+    }
+}

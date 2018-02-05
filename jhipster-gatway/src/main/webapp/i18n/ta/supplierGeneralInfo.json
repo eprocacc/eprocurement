@@ -1,0 +1,64 @@
+{
+    "jhipstergatwayApp": {
+        "supplierGeneralInfo" : {
+            "home": {
+                "title": "Supplier General Infos",
+                "createLabel": "Supplier General Info-ஐ உருவாக்கு",
+                "createOrEditLabel": "Supplier General Info -ஐ மாற்று (அ) உருவாக்கு",
+                "search": "Search for Supplier General Info"
+            },
+            "delete": {
+                "question": "நீக்குவதற்கு உறுதி செய் Supplier General Info {{ id }}?"
+            },
+            "detail": {
+                "title": "Supplier General Info"
+            },
+            "name": "Name",
+            "firstName": "First Name",
+            "middleName": "Middle Name",
+            "lastName": "Last Name",
+            "supplierStatus": "Supplier Status",
+            "primaryEmail": "Primary Email",
+            "secondaryEmail": "Secondary Email",
+            "website": "Website",
+            "expiryDate": "Expiry Date",
+            "applicationRefNo": "Application Ref No",
+            "typeGoodsYn": "Type Goods Yn",
+            "typeServicesYn": "Type Services Yn",
+            "typeWorksYn": "Type Works Yn",
+            "userType": "User Type",
+            "renewedDate": "Renewed Date",
+            "regValidity": "Reg Validity",
+            "submissionDate": "Submission Date",
+            "renewalNo": "Renewal No",
+            "approvaldate": "Approvaldate",
+            "registrationBilledYn": "Registration Billed Yn",
+            "renewalBilledYn": "Renewal Billed Yn",
+            "comments": "Comments",
+            "transactionRemarks": "Transaction Remarks",
+            "blacklistedYn": "Blacklisted Yn",
+            "regMailNotificationYn": "Reg Mail Notification Yn",
+            "applicationVerYn": "Application Ver Yn",
+            "approverDecision": "Approver Decision",
+            "sendPublishedMail": "Send Published Mail",
+            "certificateCheckYn": "Certificate Check Yn",
+            "mobileVerified": "Mobile Verified",
+            "smsEnabled": "Sms Enabled",
+            "emailVerified": "Email Verified",
+            "emailOTP": "Email OTP",
+            "emailOTPDate": "Email OTP Date",
+            "emailOTPExpired": "Email OTP Expired",
+            "supplier": "Supplier",
+            "supplierGeneralToAddress": "Supplier General To Address",
+            "suppGeneralInfoTelephones": "Supp General Info Telephones",
+            "generalInfosToSupplier": "General Infos To Supplier"
+        }
+    },
+    "supplierRegisterationApp": {
+        "supplierGeneralInfo" : {
+            "created": "Supplier General Info புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+            "updated": "Supplier General Info மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+            "deleted": "A Supplier General Info நீக்கப்பட்டது, அடையாளம {{ param }}"
+        }
+    }
+}

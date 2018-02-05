@@ -1,0 +1,51 @@
+
+<div>
+    <h2><span data-translate="jhipstergatwayApp.digitalCertificate.detail.title">Digital Certificate</span> {{vm.digitalCertificate.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="jhipstergatwayApp.digitalCertificate.certChain">Cert Chain</span></dt>
+        <dd>
+            <span>{{vm.digitalCertificate.certChain}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.digitalCertificate.certificateSerial">Certificate Serial</span></dt>
+        <dd>
+            <span>{{vm.digitalCertificate.certificateSerial}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.digitalCertificate.termStartDate">Term Start Date</span></dt>
+        <dd>
+            <span>{{vm.digitalCertificate.termStartDate | date:'medium'}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.digitalCertificate.termEndDate">Term End Date</span></dt>
+        <dd>
+            <span>{{vm.digitalCertificate.termEndDate | date:'medium'}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.digitalCertificate.signature">Signature</span></dt>
+        <dd>
+            <span>{{vm.digitalCertificate.signature}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.digitalCertificate.encryption">Encryption</span></dt>
+        <dd>
+            <span>{{vm.digitalCertificate.encryption}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.digitalCertificate.activeYn">Active Yn</span></dt>
+        <dd>
+            <span>{{vm.digitalCertificate.activeYn}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.digitalCertificate.digitalCertificateUser">Digital Certificate User</span></dt>
+        <dd>
+            <a ui-sref="supplier-detail({id:vm.digitalCertificate.digitalCertificateUser.id})">{{vm.digitalCertificate.digitalCertificateUser.id}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="digital-certificate-detail.edit({id:vm.digitalCertificate.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

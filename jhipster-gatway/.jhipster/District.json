@@ -1,0 +1,37 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "districtTaluqs",
+            "otherEntityName": "taluq",
+            "otherEntityRelationshipName": "district"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "districtsState",
+            "otherEntityName": "state",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "state",
+            "otherEntityName": "state",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180205123525",
+    "entityTableName": "district",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "skipServer": true,
+    "microserviceName": "SupplierRegisteration"
+}

@@ -1,0 +1,28 @@
+{
+    "jhipstergatwayApp": {
+        "taluq" : {
+            "home": {
+                "title": "Taluqs",
+                "createLabel": "Taluq-ஐ உருவாக்கு",
+                "createOrEditLabel": "Taluq -ஐ மாற்று (அ) உருவாக்கு",
+                "search": "Search for Taluq"
+            },
+            "delete": {
+                "question": "நீக்குவதற்கு உறுதி செய் Taluq {{ id }}?"
+            },
+            "detail": {
+                "title": "Taluq"
+            },
+            "name": "Name",
+            "taluqsDistrict": "Taluqs District",
+            "district": "District"
+        }
+    },
+    "supplierRegisterationApp": {
+        "taluq" : {
+            "created": "Taluq புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+            "updated": "Taluq மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+            "deleted": "A Taluq நீக்கப்பட்டது, அடையாளம {{ param }}"
+        }
+    }
+}

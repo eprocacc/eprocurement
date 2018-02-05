@@ -1,0 +1,11 @@
+{
+    "jhipstergatwayApp": {
+        "PhoneType" : {
+            "null": "",
+            "HOME": "HOME",
+            "OFFICE": "OFFICE",
+            "MOBILE": "MOBILE",
+            "FAX": "FAX"
+        }
+    }
+}

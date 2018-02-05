@@ -1,0 +1,23 @@
+{
+    "jhipstergatwayApp": {
+        "SupplierStatus" : {
+            "null": "",
+            "DRAFT": "DRAFT",
+            "RECEIVED": "RECEIVED",
+            "SENT_FOR_APPROVAL": "SENT_FOR_APPROVAL",
+            "APPROVED": "APPROVED",
+            "REGISTERED": "REGISTERED",
+            "BLACKLISTED": "BLACKLISTED",
+            "REJECTED": "REJECTED",
+            "TO_BE_RENEWED": "TO_BE_RENEWED",
+            "REG_EXPIRED": "REG_EXPIRED",
+            "RENEWED": "RENEWED",
+            "CANCELED": "CANCELED",
+            "ACCEPTED": "ACCEPTED",
+            "ACTIVATED": "ACTIVATED",
+            "DEACTIVATED": "DEACTIVATED",
+            "VERIFIED": "VERIFIED",
+            "SEEK_CLARIFICATIONS": "SEEK_CLARIFICATIONS"
+        }
+    }
+}

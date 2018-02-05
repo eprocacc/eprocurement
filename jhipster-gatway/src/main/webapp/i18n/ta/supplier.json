@@ -1,0 +1,46 @@
+{
+    "jhipstergatwayApp": {
+        "supplier" : {
+            "home": {
+                "title": "Suppliers",
+                "createLabel": "Supplier-ஐ உருவாக்கு",
+                "createOrEditLabel": "Supplier -ஐ மாற்று (அ) உருவாக்கு",
+                "search": "Search for Supplier"
+            },
+            "delete": {
+                "question": "நீக்குவதற்கு உறுதி செய் Supplier {{ id }}?"
+            },
+            "detail": {
+                "title": "Supplier"
+            },
+            "applicantType": "Applicant Type",
+            "type": "Type",
+            "name": "Name",
+            "firstName": "First Name",
+            "middleName": "Middle Name",
+            "lastName": "Last Name",
+            "socialStatus": "Social Status",
+            "designation": "Designation",
+            "regnNumber": "Regn Number",
+            "pan": "Pan",
+            "panName": "Pan Name",
+            "grossTurnOver": "Gross Turn Over",
+            "supplierStatus": "Supplier Status",
+            "ssiYn": "Ssi Yn",
+            "ssiRegnNumber": "Ssi Regn Number",
+            "panStatus": "Pan Status",
+            "msmeYn": "Msme Yn",
+            "msmeRegnNumber": "Msme Regn Number",
+            "supplierAddress": "Supplier Address",
+            "supplierToNominees": "Supplier To Nominees",
+            "supplierToGeneralInfos": "Supplier To General Infos"
+        }
+    },
+    "supplierRegisterationApp": {
+        "supplier" : {
+            "created": "Supplier புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+            "updated": "Supplier மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+            "deleted": "A Supplier நீக்கப்பட்டது, அடையாளம {{ param }}"
+        }
+    }
+}

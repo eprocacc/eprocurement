@@ -1,0 +1,39 @@
+
+<div>
+    <h2><span data-translate="jhipstergatwayApp.supplierNominee.detail.title">Supplier Nominee</span> {{vm.supplierNominee.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="jhipstergatwayApp.supplierNominee.name">Name</span></dt>
+        <dd>
+            <span>{{vm.supplierNominee.name}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierNominee.registered">Registered</span></dt>
+        <dd>
+            <span>{{vm.supplierNominee.registered}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierNominee.certChain">Cert Chain</span></dt>
+        <dd>
+            <span>{{vm.supplierNominee.certChain}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierNominee.supplier">Supplier</span></dt>
+        <dd>
+            <a ui-sref="supplier-detail({id:vm.supplierNominee.supplier.id})">{{vm.supplierNominee.supplier.id}}</a>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.supplierNominee.nomineesToSupplier">Nominees To Supplier</span></dt>
+        <dd>
+            <a ui-sref="supplier-detail({id:vm.supplierNominee.nomineesToSupplier.id})">{{vm.supplierNominee.nomineesToSupplier.id}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="supplier-nominee-detail.edit({id:vm.supplierNominee.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

@@ -1,0 +1,30 @@
+{
+    "jhipstergatwayApp": {
+        "supplierNominee" : {
+            "home": {
+                "title": "Supplier Nominees",
+                "createLabel": "Create a new Supplier Nominee",
+                "createOrEditLabel": "Create or edit a Supplier Nominee",
+                "search": "Search for Supplier Nominee"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Supplier Nominee {{ id }}?"
+            },
+            "detail": {
+                "title": "Supplier Nominee"
+            },
+            "name": "Name",
+            "registered": "Registered",
+            "certChain": "Cert Chain",
+            "supplier": "Supplier",
+            "nomineesToSupplier": "Nominees To Supplier"
+        }
+    },
+    "supplierRegisterationApp": {
+        "supplierNominee" : {
+            "created": "A new Supplier Nominee is created with identifier {{ param }}",
+            "updated": "A Supplier Nominee is updated with identifier {{ param }}",
+            "deleted": "A Supplier Nominee is deleted with identifier {{ param }}"
+        }
+    }
+}

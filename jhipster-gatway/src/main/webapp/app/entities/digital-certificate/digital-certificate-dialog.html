@@ -1,0 +1,79 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myDigitalCertificateLabel" data-translate="jhipstergatwayApp.digitalCertificate.home.createOrEditLabel">Create or edit a Digital Certificate</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.digitalCertificate.id">
+            <label for="id" data-translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.digitalCertificate.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.digitalCertificate.certChain" for="field_certChain">Cert Chain</label>
+            <input type="text" class="form-control" name="certChain" id="field_certChain"
+                    ng-model="vm.digitalCertificate.certChain"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.digitalCertificate.certificateSerial" for="field_certificateSerial">Certificate Serial</label>
+            <input type="text" class="form-control" name="certificateSerial" id="field_certificateSerial"
+                    ng-model="vm.digitalCertificate.certificateSerial"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.digitalCertificate.termStartDate" for="field_termStartDate">Term Start Date</label>
+                <div class="input-group">
+                    <input id="field_termStartDate" type="text" class="form-control" name="termStartDate" datetime-picker="{{dateformat}}" ng-model="vm.digitalCertificate.termStartDate" is-open="vm.datePickerOpenStatus.termStartDate"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('termStartDate')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.digitalCertificate.termEndDate" for="field_termEndDate">Term End Date</label>
+                <div class="input-group">
+                    <input id="field_termEndDate" type="text" class="form-control" name="termEndDate" datetime-picker="{{dateformat}}" ng-model="vm.digitalCertificate.termEndDate" is-open="vm.datePickerOpenStatus.termEndDate"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('termEndDate')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.digitalCertificate.signature" for="field_signature">Signature</label>
+                <input type="checkbox" name="signature" id="field_signature"
+                          ng-model="vm.digitalCertificate.signature"/>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.digitalCertificate.encryption" for="field_encryption">Encryption</label>
+                <input type="checkbox" name="encryption" id="field_encryption"
+                          ng-model="vm.digitalCertificate.encryption"/>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="jhipstergatwayApp.digitalCertificate.activeYn" for="field_activeYn">Active Yn</label>
+                <input type="checkbox" name="activeYn" id="field_activeYn"
+                          ng-model="vm.digitalCertificate.activeYn"/>
+        </div>
+
+        <div class="form-group">
+            <label data-translate="jhipstergatwayApp.digitalCertificate.digitalCertificateUser" for="field_digitalCertificateUser">Digital Certificate User</label>
+            <select class="form-control" id="field_digitalCertificateUser" name="digitalCertificateUser" ng-model="vm.digitalCertificate.digitalCertificateUser" ng-options="supplier as supplier.id for supplier in vm.suppliers track by supplier.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

@@ -1,0 +1,11 @@
+{
+    "jhipstergatwayApp": {
+        "SocialStatus" : {
+            "null": "",
+            "HUF": "HUF",
+            "SC": "SC",
+            "ST": "ST",
+            "OTHERS": "OTHERS"
+        }
+    }
+}

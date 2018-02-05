@@ -1,0 +1,213 @@
+
+entity Taluq {
+	name String
+}
+
+entity District {
+	name String
+}
+
+relationship OneToMany {
+	District{districtTaluqs} to Taluq
+}
+
+relationship ManyToOne {
+	Taluq{taluqsDistrict} to District
+}
+
+entity State {
+	name String
+}
+
+entity Country {
+	name String
+}
+
+relationship OneToMany {
+	Country{countryStates} to State
+}
+
+relationship ManyToOne {
+	State{statesCountry} to Country
+}
+
+relationship OneToMany {
+	State{stateDistricts} to District
+}
+
+relationship ManyToOne {
+	District{districtsState} to State
+}
+
+entity Address {
+	blockNumber String,
+    street String,
+    city String,
+    otherState String,
+    pin String,
+    countryId Integer,
+    stateId Integer
+}
+
+relationship ManyToOne {
+	Address{addressState} to State
+}
+relationship ManyToOne {
+	Address{addressCountry} to Country
+}
+
+enum SocialStatus {
+	HUF, SC, ST, OTHERS
+}
+
+enum SupplierStatus {
+	DRAFT, RECEIVED, SENT_FOR_APPROVAL, 
+    APPROVED, REGISTERED, BLACKLISTED, REJECTED,
+    TO_BE_RENEWED, REG_EXPIRED, RENEWED, CANCELED,
+    ACCEPTED, ACTIVATED, DEACTIVATED, VERIFIED,
+    SEEK_CLARIFICATIONS
+}
+
+entity Supplier {
+	applicantType String,
+    type String,
+    name String,
+    firstName String,
+    middleName String,
+    lastName String
+    socialStatus SocialStatus,
+    designation String,
+    regnNumber String,
+    pan String,
+    panName String,
+    grossTurnOver Double,
+    supplierStatus SupplierStatus,
+    ssiYn Boolean,
+    ssiRegnNumber String,
+    panStatus Boolean,
+    msmeYn Boolean,
+    msmeRegnNumber String,
+}
+
+relationship OneToOne {
+	Supplier{supplierAddress} to Address
+}
+
+entity SupplierNominee {
+	name String,
+    registered Boolean,
+    certChain String
+}
+
+relationship OneToMany {
+	Supplier{supplierToNominees} to SupplierNominee
+}
+
+relationship ManyToOne {
+	SupplierNominee{nomineesToSupplier} to Supplier
+}
+
+enum SupplierUserType {
+	AUTHORIZED_SIGNATORY, NOMINATED_USER
+}
+
+entity SupplierGeneralInfo {
+	name String,
+    firstName String,
+    middleName String,
+    lastName String,
+    supplierStatus SupplierStatus,
+    primaryEmail String,
+    secondaryEmail String,
+    website String,
+    expiryDate ZonedDateTime,
+    applicationRefNo String,
+    typeGoodsYn Boolean,
+    typeServicesYn Boolean,
+    typeWorksYn Boolean,
+    userType SupplierUserType,
+    renewedDate ZonedDateTime,
+    regValidity Integer,
+    submissionDate ZonedDateTime,
+    renewalNo Integer,
+    approvaldate ZonedDateTime,
+    registrationBilledYn Boolean,
+    renewalBilledYn Boolean,
+    comments String,
+    transactionRemarks String,
+    blacklistedYn Boolean,
+    regMailNotificationYn Boolean,
+    applicationVerYn Boolean,
+    approverDecision SupplierStatus,
+    sendPublishedMail Boolean,
+    certificateCheckYn Boolean,
+    mobileVerified Boolean,
+    smsEnabled Boolean,
+    emailVerified Boolean,
+    emailOTP String,
+    emailOTPDate ZonedDateTime,
+    emailOTPExpired Boolean    
+}
+
+relationship OneToMany {
+	Supplier{supplierToGeneralInfos} to SupplierGeneralInfo
+}
+
+relationship ManyToOne {
+	SupplierGeneralInfo{generalInfosToSupplier} to Supplier
+}
+
+relationship OneToOne {
+	SupplierGeneralInfo{supplierGeneralToAddress} to Address
+}
+
+entity DigitalCertificate {
+	certChain String,
+    certificateSerial String,
+    termStartDate ZonedDateTime,
+    termEndDate ZonedDateTime,
+    signature Boolean,
+    encryption Boolean,
+    activeYn Boolean
+}
+
+relationship ManyToOne {
+	DigitalCertificate{digitalCertificateUser} to Supplier
+}
+
+entity Telephone {
+	countryCode Integer,
+    areaCode Integer,
+    number String,
+    type PhoneType,
+    mobileOTP String,
+    mobileOTPDate ZonedDateTime,
+    mobileOTPExpired Boolean
+}
+
+enum PhoneType {
+		HOME, OFFICE, MOBILE, FAX
+}
+
+relationship OneToMany {
+	SupplierGeneralInfo{suppGeneralInfoTelephones} to Telephone
+}
+
+paginate Address with pagination
+
+paginate Supplier with pagination
+
+paginate SupplierGeneralInfo with pagination
+
+service all with serviceImpl
+
+dto * with mapstruct
+
+// Set an angular suffix
+//angularSuffix * with mySuffix
+
+//skipServer all
+
+//microservice * with SupplierRegisteration
+
+

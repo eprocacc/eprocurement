@@ -1,0 +1,29 @@
+{
+    "jhipstergatwayApp": {
+        "district" : {
+            "home": {
+                "title": "Districts",
+                "createLabel": "District-ஐ உருவாக்கு",
+                "createOrEditLabel": "District -ஐ மாற்று (அ) உருவாக்கு",
+                "search": "Search for District"
+            },
+            "delete": {
+                "question": "நீக்குவதற்கு உறுதி செய் District {{ id }}?"
+            },
+            "detail": {
+                "title": "District"
+            },
+            "name": "Name",
+            "districtTaluqs": "District Taluqs",
+            "districtsState": "Districts State",
+            "state": "State"
+        }
+    },
+    "supplierRegisterationApp": {
+        "district" : {
+            "created": "District புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+            "updated": "District மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+            "deleted": "A District நீக்கப்பட்டது, அடையாளம {{ param }}"
+        }
+    }
+}

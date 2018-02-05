@@ -1,0 +1,51 @@
+
+<div>
+    <h2><span data-translate="jhipstergatwayApp.telephone.detail.title">Telephone</span> {{vm.telephone.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="jhipstergatwayApp.telephone.countryCode">Country Code</span></dt>
+        <dd>
+            <span>{{vm.telephone.countryCode}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.telephone.areaCode">Area Code</span></dt>
+        <dd>
+            <span>{{vm.telephone.areaCode}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.telephone.number">Number</span></dt>
+        <dd>
+            <span>{{vm.telephone.number}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.telephone.type">Type</span></dt>
+        <dd>
+            <span data-translate="{{'jhipstergatwayApp.PhoneType.' + vm.telephone.type}}">{{vm.telephone.type}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.telephone.mobileOTP">Mobile OTP</span></dt>
+        <dd>
+            <span>{{vm.telephone.mobileOTP}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.telephone.mobileOTPDate">Mobile OTP Date</span></dt>
+        <dd>
+            <span>{{vm.telephone.mobileOTPDate | date:'medium'}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.telephone.mobileOTPExpired">Mobile OTP Expired</span></dt>
+        <dd>
+            <span>{{vm.telephone.mobileOTPExpired}}</span>
+        </dd>
+        <dt><span data-translate="jhipstergatwayApp.telephone.supplierGeneralInfo">Supplier General Info</span></dt>
+        <dd>
+            <a ui-sref="supplier-general-info-detail({id:vm.telephone.supplierGeneralInfo.id})">{{vm.telephone.supplierGeneralInfo.id}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="telephone-detail.edit({id:vm.telephone.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>
